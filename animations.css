@@ -17,3 +17,43 @@
 .ex-2-square:active {
   width: 100%;
 }
+
+
+
+.ex-3-square {
+  transition: border-radius 1s;
+}
+
+.ex-3-square:hover {
+  border-radius: 100%;
+}
+
+
+
+.ex-4-square {
+  transition: opacity 3s;
+}
+
+.ex-4-square:hover {
+  opacity: 0.0;
+}
+
+
+
+.ex-5-square{
+  width: 50px;
+  height: 50px;
+  transition: all 3s;
+}
+
+.ex-5-square:hover{
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+.ex-5-square:active{
+  width: 25px;
+  height: 25px;
+  margin: 40px;
+}

@@ -98,3 +98,14 @@
   width: 600px;
   margin: 0;
 }
+
+
+
+.ex-10-icon{
+  animation-name: infinite-rotation;
+  animation-duration: infinite;
+}
+
+@keyframes infinite-rotation {
+
+}

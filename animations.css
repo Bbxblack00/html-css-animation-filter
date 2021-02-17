@@ -1,0 +1,19 @@
+.ex-1-square {
+  background-color: none;
+  transition: background-color 3s;
+}
+
+.ex-1-square:hover {
+  background-color: red;
+}
+
+
+
+.ex-2-square {
+  width: 100px;
+  transition: width 2s;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}

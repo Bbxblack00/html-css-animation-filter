@@ -1,6 +1,6 @@
 .ex-1-square {
   background-color: none;
-  transition: background-color 3s;
+  transition: background-color 3s linear;
 }
 
 .ex-1-square:hover {
@@ -11,7 +11,7 @@
 
 .ex-2-square {
   width: 100px;
-  transition: width 2s;
+  transition: width 2s linear;
 }
 
 .ex-2-square:active {
@@ -21,7 +21,7 @@
 
 
 .ex-3-square {
-  transition: border-radius 1s;
+  transition: border-radius 1s linear;
 }
 
 .ex-3-square:hover {
@@ -31,7 +31,7 @@
 
 
 .ex-4-square {
-  transition: opacity 3s;
+  transition: opacity 3s linear;
 }
 
 .ex-4-square:hover {
@@ -43,7 +43,7 @@
 .ex-5-square{
   width: 50px;
   height: 50px;
-  transition: all 3s;
+  transition: all 3s linear;
 }
 
 .ex-5-square:hover{
@@ -67,7 +67,7 @@
 
 
 .ex-7-img {
-  transition: filter 2s;
+  transition: filter 2s linear;
 }
 
 .ex-7-img:hover {
@@ -77,7 +77,7 @@
 
 
 .ex-8-img {
-  transition: all 2s;
+  transition: all 2s linear;
 }
 
 .ex-8-img:hover {
@@ -88,7 +88,7 @@
 
 
 .ex-9-img {
-  transition: all 2s;
+  transition: all 2s linear;
 }
 
 .ex-9-img:hover {
@@ -101,11 +101,82 @@
 
 
 
-.ex-10-icon{
+.ex-10-icon {
   animation-name: infinite-rotation;
-  animation-duration: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes infinite-rotation {
 
+  0% {transform: rotate(360deg);}
+
+}
+
+
+
+.ex-11-icon:hover {
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+
+  0% {transform: rotate(0);}
+
+  75%  {transform: rotate(270deg);}
+
+  100% {transform: rotate(0deg);}
+
+}
+
+
+
+.ex-12-top-white:hover{
+  animation-name: right;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes right {
+  0%  {left: 10%;}
+  100%{left: 60%;}
+}
+
+.ex-12-bottom-white:hover{
+  animation-name: left;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes left {
+  0%  {right: 20%;}
+  100%{right: 60%;}
+}
+
+
+
+.ex-13-top-white{
+  animation-name: right;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes rightdue {
+  0%  {left: 10%;}
+  50% {left: 90%;}
+  100%{bottom:-10%; top: 110%;}
+}
+
+.ex-13-bottom-white:hover{
+  animation-name: left;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes leftdue {
+  0%  {right: 20%;}
+  100%{right: 60%;}
 }
